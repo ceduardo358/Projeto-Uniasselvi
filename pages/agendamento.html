@@ -9,50 +9,99 @@
     <title>Agendamento</title>
 </head>
 <body>
-    <div class="navigator d-flex justify-content-around" >
-        <!-- Logo -->
-        <img src="../images/logo.png" alt="logo" srcset="" style="width: 110px;">
-         <!-- Area de menus e navegação das páginas    -->
-        <ul class="nav nav-tabs mt-4">
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-                 <a class="nav-link" href="./servicos.html">SERVIÇOS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./agendamento.html" target="_self">AGENDAMENTOS</a>
-            </li>
-        </ul>
-    </div>
-    <h2>Pagina de Agendamentos</h2>
+   <section>
+    <nav>
+      <div class="navigator d-flex justify-content-around " >
+          <!-- Logo -->
+          <img src="../images/logo.png" alt="logo" srcset="" style="width: 130px;">
+           <!-- Area de menus e navegação das páginas    -->
+          <ul class="nav nav-tabs mt-4   ">
+              <li class="nav-item ">
+                  <a class="nav-link text-danger" aria-current="page" href="../index.html">HOME</a>
+              </li>
 
-    <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-         
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-               
-              </ul>
-              
+              <li class="nav-item">
+                   <a class="nav-link text-danger" href="../pages/servicos.html">SERVIÇOS</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link text-danger" href="../pages/agendamento.html">AGENDAMENTOS</a>
+              </li>
+          </ul>
+      </div>
+      <!-- PARTE RESPONSIVA DO MENU -->
+      <nav class="navbar navbar-dark bg-dark d-lg-none">
+          <div class="container-fluid">
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+
+              <div class="offcanvas-body navbar-dark bg-dark">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active text-danger" aria-current="page" href="./index.html">HOME</a>
+                  </li>
+
+                  <li class="nav-item ">
+                    <a class="nav-link text-danger" href="./pages/servicos.html">SERVIÇOS</a>
+                  </li>
+
+                  <li class="nav-item ">
+                      <a class="nav-link text-danger" href="./pages/agendamento.html">AGENDAMENTO</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
+        </nav>
       </nav>
+   </section>
+
+   <section>
+    <form class="row row-cols-lg-auto g-3 align-items-center">
+      <div class="col-sm-3">
+        <label class="visually-hidden" for="specificSizeInputName">Name</label>
+        <input type="text" class="form-control" id="specificSizeInputName" placeholder="Digite seu nome">
+      </div>
+    
+      <div class="col-12">
+        <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+        <select class="form-select" id="inlineFormSelectPref">
+          <option selected>Horas Disponíveis</option>
+          <option value="1">08:00</option>
+          <option value="2">10:00</option>
+          <option value="3">11:00</option>
+          <option value="4">13:00</option>
+          <option value="5">15:00</option>
+        </select>
+      </div>
+    
+      <div class="col-sm-10 ">
+        <div class="form-check text-white">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            Lavagem Simples
+          </label>
+        </div>
+        <div class="form-check text-white">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label " for="gridRadios2">
+            Lavagem Completa
+          </label>
+        </div>
+    
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+   </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
