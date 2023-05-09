@@ -55,3 +55,17 @@ footer{
     padding: 8px;
     margin-top: 15px;
 }
+
+.container-agendamento {
+    margin:40px   auto;
+    border: 2px solid red;
+    width: 80%;
+    height: 600px;
+}
+
+
+@media (max-width: 768px) { 
+    .navigator ul{
+        display: none;
+    }
+ }
